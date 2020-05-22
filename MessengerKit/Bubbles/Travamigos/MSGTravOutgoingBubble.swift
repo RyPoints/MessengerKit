@@ -15,8 +15,8 @@ class MSGTravOutgoingBubble: UITextView {
     
     var gradientColors: [CGColor] {
         return [
-            #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1).cgColor,
-            #colorLiteral(red: 0.2605174184, green: 0.2605243921, blue: 0.260520637, alpha: 1).cgColor
+            #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1).cgColor,
+            #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1).cgColor
             //UIColor(red:1.00, green:0.30, blue:0.13, alpha:1.00).cgColor,
             //UIColor(red:0.89, green:0.08, blue:0.46, alpha:1.00).cgColor
         ]

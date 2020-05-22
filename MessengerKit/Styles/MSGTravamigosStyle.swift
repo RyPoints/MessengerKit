@@ -31,9 +31,9 @@ public struct MSGTravamigosStyle: MSGMessengerStyle {
     
     public var inputPlaceholderTextColor: UIColor = .lightGray
     
-    public var outgoingTextColor: UIColor = .white
+    public var outgoingTextColor: UIColor = .darkGray
     
-    public var incomingTextColor: UIColor = .darkGray
+    public var incomingTextColor: UIColor = .white
     
     public var outgoingLinkColor: UIColor = .white
     
@@ -76,15 +76,16 @@ public struct MSGTravamigosStyle: MSGMessengerStyle {
     
     /// Colors for the gradient on outgoing bubbles
     public var outgoingGradient: [CGColor] = [
-            UIColor.black.cgColor,
-            #colorLiteral(red: 0.2605174184, green: 0.2605243921, blue: 0.260520637, alpha: 1).cgColor
-    ]
+            #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1).cgColor,
+            UIColor.white.cgColor,
+        ]
+        
     
     /// Colors for the gradient on incoming bubbles
     public var incomingGradient: [CGColor] = [
-        #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1).cgColor,
-        UIColor.white.cgColor,
-    ]
+            UIColor.black.cgColor,
+            #colorLiteral(red: 0.2605174184, green: 0.2605243921, blue: 0.260520637, alpha: 1).cgColor
+        ]
     
     /// The text for the send button
     public var inputButtonText = "Send"
