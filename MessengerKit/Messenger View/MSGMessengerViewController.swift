@@ -213,28 +213,28 @@ open class MSGMessengerViewController: UIViewController {
             return
         }
         
-        var attributedText: NSMutableAttributedString!
-        
-        if users.count == 1 {
-            attributedText = NSMutableAttributedString(string: users[0].displayName, attributes: [
-                .font: UIFont.systemFont(ofSize: 14, weight: .bold),
-                .foregroundColor: UIColor.darkText
-            ])
-        } else {
-            attributedText = NSMutableAttributedString(string: "\(users.count) people", attributes: [
-                .font: UIFont.systemFont(ofSize: 14, weight: .bold),
-                .foregroundColor: UIColor.darkText
-            ])
-        }
-        
-        attributedText.append(NSAttributedString(string: users.count == 1 ? " is typing…" : " typing…", attributes: [
-            .font: UIFont.systemFont(ofSize: 14, weight: .medium),
-            .foregroundColor: UIColor.black
-        ]))
-        
-        
-        collectionView.typingLabel.attributedText = attributedText
-        collectionView.layoutTypingLabelIfNeeded()
+//        var attributedText: NSMutableAttributedString!
+//        
+//        if users.count == 1 {
+//            attributedText = NSMutableAttributedString(string: users[0].displayName, attributes: [
+//                .font: UIFont.systemFont(ofSize: 14, weight: .bold),
+//                .foregroundColor: UIColor.darkText
+//            ])
+//        } else {
+//            attributedText = NSMutableAttributedString(string: "\(users.count) people", attributes: [
+//                .font: UIFont.systemFont(ofSize: 14, weight: .bold),
+//                .foregroundColor: UIColor.darkText
+//            ])
+//        }
+//        at
+//        attributedText.append(NSAttributedString(string: users.count == 1 ? " is typing…" : " typing…", attributes: [
+//            .font: UIFont.systemFont(ofSize: 14, weight: .medium),
+//            .foregroundColor: UIColor.black
+//        ]))
+//        
+//        
+//        collectionView.typingLabel.attributedText = attributedText
+//        collectionView.layoutTypingLabelIfNeeded()
         
     }
     
