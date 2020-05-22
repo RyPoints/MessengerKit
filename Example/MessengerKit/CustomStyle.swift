@@ -73,7 +73,7 @@ struct CustomStyle: MSGMessengerStyle {
     
     // MARK - Custom Properties
     
-    var incomingBorderColor: UIColor = .white
+    var incomingBorderColor: UIColor = #colorLiteral(red: 0.3333333433, green: 0.3333333433, blue: 0.3333333433, alpha: 1)
     
     var outgoingBorderColor: UIColor = UIColor(hue:0.91, saturation:0.70, brightness:0.85, alpha:1.00)
     

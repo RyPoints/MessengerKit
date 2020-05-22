@@ -19,7 +19,7 @@ class TravamigosViewController: MSGMessengerViewController {
     
     override var style: MSGMessengerStyle {
         let style = MessengerKit.Styles.travamigos
-//        style.headerHeight = 0
+        //style.headerHeight = 0
         //        style.inputPlaceholder = "Message"
         //        style.alwaysDisplayTails = true
         //        style.outgoingBubbleColor = .magenta

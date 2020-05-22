@@ -12,8 +12,8 @@ class MSGTravIncomingBubble: MSGTravOutgoingBubble {
     
     override var gradientColors: [CGColor] {
         return [
-            UIColor.white.cgColor,
-            UIColor.white.cgColor
+                #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1).cgColor,
+                #colorLiteral(red: 0.2605174184, green: 0.2605243921, blue: 0.260520637, alpha: 1).cgColor
         ]
     }
     
@@ -23,5 +23,7 @@ class MSGTravIncomingBubble: MSGTravOutgoingBubble {
         }
         set { }
     }
+    
+    
     
 }
