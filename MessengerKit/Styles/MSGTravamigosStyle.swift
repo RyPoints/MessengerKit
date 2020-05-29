@@ -21,9 +21,9 @@ public struct MSGTravamigosStyle: MSGMessengerStyle {
     
     public var inputViewBackgroundColor: UIColor = .white
     
-    public var font: UIFont = .systemFont(ofSize: 14, weight: .bold)
+    public var font: UIFont = .systemFont(ofSize: 14, weight: .semibold)
     
-    public var inputFont: UIFont = .systemFont(ofSize: 14, weight: .bold)
+    public var inputFont: UIFont = .systemFont(ofSize: 14, weight: .semibold)
     
     public var inputPlaceholder: String = "Type something..."
     
@@ -76,8 +76,8 @@ public struct MSGTravamigosStyle: MSGMessengerStyle {
     
     /// Colors for the gradient on outgoing bubbles
     public var outgoingGradient: [CGColor] = [
-            #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1).cgColor,
-            UIColor.white.cgColor,
+            #colorLiteral(red: 0.8374180198, green: 0.8374378085, blue: 0.8374271393, alpha: 1).cgColor,
+            #colorLiteral(red: 0.9019607843, green: 0.8980392157, blue: 0.9294117647, alpha: 1).cgColor,
         ]
         
     

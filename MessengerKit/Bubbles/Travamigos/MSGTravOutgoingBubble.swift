@@ -15,8 +15,8 @@ class MSGTravOutgoingBubble: UITextView {
     
     var gradientColors: [CGColor] {
         return [
-            #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1).cgColor,
-            #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1).cgColor
+            #colorLiteral(red: 0.8374180198, green: 0.8374378085, blue: 0.8374271393, alpha: 1).cgColor,
+            #colorLiteral(red: 0.9019607843, green: 0.8980392157, blue: 0.9294117647, alpha: 1).cgColor,
             //UIColor(red:1.00, green:0.30, blue:0.13, alpha:1.00).cgColor,
             //UIColor(red:0.89, green:0.08, blue:0.46, alpha:1.00).cgColor
         ]
@@ -68,7 +68,8 @@ class MSGTravOutgoingBubble: UITextView {
         dataDetectorTypes = [.flightNumber, .calendarEvent, .address, .phoneNumber, .link, .lookupSuggestion]
         isUserInteractionEnabled = true
         delaysContentTouches = true
-        font = UIFont.systemFont(ofSize: 14, weight: .semibold)
+        //font = UIFont.systemFont(ofSize: 14, weight: .semibold)
+        font = UIFont.systemFont(ofSize: 14, weight: .light)
         translatesAutoresizingMaskIntoConstraints = false
         textContainerInset = UIEdgeInsets(top: 15, left: 20, bottom: 15, right: 20)
         textContainer.lineFragmentPadding = 0
