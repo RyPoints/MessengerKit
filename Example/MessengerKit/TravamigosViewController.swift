@@ -38,7 +38,7 @@ class TravamigosViewController: MSGMessengerViewController {
                 MSGMessage(id: 1, body: .emoji("🐙💦🔫"), user: tim, sentAt: Date()),
                 ],
             [
-                MSGMessage(id: 2, body: .text("Yeah sure, gimme 5"), user: steve, sentAt: Date()),
+                MSGMessage(id: 2, body: .text("Yeah sure, <a href='https://www.google.com'>www.google.com</a> gimme 5"), user: steve, sentAt: Date()),
                 MSGMessage(id: 3, body: .text("Okay ready when you are"), user: steve, sentAt: Date())
             ],
             [

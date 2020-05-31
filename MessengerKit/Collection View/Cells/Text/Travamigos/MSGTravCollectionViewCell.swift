@@ -28,8 +28,17 @@ open class MSGTravCollectionViewCell: MSGMessageCell {
             guard let message = message, let style = style as? MSGTravamigosStyle else { return }
             bubble.linkTextAttributes[NSAttributedStringKey.underlineColor.rawValue] = style.outgoingLinkColor
             bubble.linkTextAttributes[NSAttributedStringKey.foregroundColor.rawValue] = style.outgoingLinkColor
+            let color = message.user.isSender ? style.outgoingTextColor :  style.incomingTextColor
+            bubble.attributer = bubble.text!.size(14)
+            .color(color)
+            .match("is").underline.underline(UIColor.red)
+            .makeInteract { link in
+                    print(link)
+                }
+            .all.font(UIFont.systemFont(ofSize: 14, weight: .semibold))
+            
             bubble.font = style.font
-            bubble.textColor = message.user.isSender ? style.outgoingTextColor : style.incomingTextColor
+            //bubble.textColor = message.user.isSender ? style.outgoingTextColor : style.incomingTextColor
             bubble.gradientLayer.colors = message.user.isSender ? style.outgoingGradient : style.incomingGradient
         }
     }

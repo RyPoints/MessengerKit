@@ -35,9 +35,9 @@ public struct MSGTravamigosStyle: MSGMessengerStyle {
     
     public var incomingTextColor: UIColor = .white
     
-    public var outgoingLinkColor: UIColor = .white
+    public var outgoingLinkColor: UIColor = #colorLiteral(red: 0.5, green: 0.3566596533, blue: 1, alpha: 1)
     
-    public var incomingLinkColor: UIColor = UIColor(red:1.00, green:0.30, blue:0.13, alpha:1.00)
+    public var incomingLinkColor: UIColor = #colorLiteral(red: 0.5, green: 0.3566596533, blue: 1, alpha: 1) //UIColor(red:1.00, green:0.30, blue:0.13, alpha:1.00)
     
     public func size(for message: MSGMessage, in collectionView: UICollectionView) -> CGSize {
         
@@ -47,6 +47,15 @@ public struct MSGTravamigosStyle: MSGMessengerStyle {
         case .text(let body):
             
             let bubble = MSGTravOutgoingBubble()
+//            let color = message.user.isSender ? outgoingTextColor :  incomingTextColor
+//            bubble.attributer = bubble.text!.size(14)
+//            .color(color)
+//            .match("is").underline.underline(UIColor.red)
+//            .makeInteract { link in
+//                    print(link)
+//                }
+//            .all.font(UIFont.systemFont(ofSize: 14, weight: .semibold))
+        
             bubble.text = body
             bubble.font = font
             let bubbleSize = bubble.calculatedSize(in: CGSize(width: collectionView.bounds.width, height: .infinity))

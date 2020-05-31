@@ -7,9 +7,8 @@
 //
 
 import UIKit
-
 /// A bubble for outgoing messages for use in the Travamigos style.
-class MSGTravOutgoingBubble: UITextView {
+class MSGTravOutgoingBubble: AttributedTextView {
     
     var gradientLayer = CAGradientLayer()
     
@@ -59,7 +58,6 @@ class MSGTravOutgoingBubble: UITextView {
     
     
     fileprivate func setupView() {
-        
         layer.cornerRadius = 18
         layer.masksToBounds = true
         
@@ -104,7 +102,7 @@ class MSGTravOutgoingBubble: UITextView {
                                                            inDirection: UITextLayoutDirection.left.rawValue) else {
                                                             return false
         }
-        
+       
         let startIndex = offset(from: beginningOfDocument, to: range.start)
         
         return attributedText.attribute(.link, at: startIndex, effectiveRange: nil) != nil
